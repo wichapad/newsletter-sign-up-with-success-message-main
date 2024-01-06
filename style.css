@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bg-content {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-desktop {
+    display: none;
+}
+
+.img-mobile {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.content-container {
+    padding: 1.5rem;
+}
+
+.header-content {
+    padding-bottom: 1.2rem;
+}
+
+.header-content div h1 {
+    padding-bottom: 1rem;
+}
+
+.middle-content div {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.3rem 0 0.3rem 0;
+}
+
+.middle-content img {
+    width: 18px;
+}
+
+.middle-content p {
+    padding-left: 1.2rem;
+}
+
+.footer-content {
+    padding-top: 1.5rem;
+    position: relative;
+}
+
+.footer-content p {
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+.footer-content .error-message {
+    position: absolute;
+    font-size: 12px;
+    top: 1.5rem;
+    right: 0;
+    color: orangered;
+}
+
+.footer-content input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 7%, 60%);
+    outline: none;
+}
+
+.footer-content input:focus {
+    border: 1px solid #000;
+}
+
+.footer-content .btn-content button {
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-content .btn-content button:hover {
+    background-color: orangered;
+}
+
+/* <!-- thanks Subscribing  --> */
+.bg-subcript-content {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 350px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscript-content {
+    padding: 1.5rem;
+}
+
+.success-content {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.success-content img {
+    width: 40px;
+}
+
+.subscript-content .subscript-header {
+    padding-bottom: 1.5rem;
+}
+
+.subscript-content div h1 {
+    line-height: 2rem;
+}
+
+.subscript-content .subscript-subcontent {
+    padding-bottom: 12rem;
+}
+
+.subscript-content .subscript-subcontent span {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 960px) {
+    .bg-content {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 800px;
+        height: 500px;
+    }
+
+    .img-desktop {
+        display: block;
+        width: 340px;
+        border-radius: 10px;
+        padding: 0.8rem 0.5rem;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .content-container {
+        padding: 2rem;
+    }
+
+    .header-content div h1 {
+        font-size: 3rem;
+    }
+
+    .bg-subcript-content {
+        width: 400px;
+
+    }
+
+    .subscript-content {
+        padding: 1.8rem;
+    }
+
+    .success-content {
+        padding-top: 0rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .subscript-content .subscript-header {
+        padding-bottom: 1rem;
+    }
+
+    .subscript-content .subscript-subcontent {
+        padding-bottom: 0rem;
+    }
+}
